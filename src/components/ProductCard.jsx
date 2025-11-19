@@ -1,4 +1,8 @@
+import { useCart } from '../hooks/useCart';
+
 function ProductCard({ product }) {
+  const { addToCart } = useCart();
+
   return (
     <article className="group bg-noor-darkest/70 border border-noor-medium/70 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:border-noor-gold/70 transition-all duration-200 flex flex-col">
       <div className="relative h-72 bg-noor-medium/40">
@@ -30,7 +34,10 @@ function ProductCard({ product }) {
               <p className="text-[0.7rem] text-noor-light mt-1">{product.note}</p>
             )}
           </div>
-          <button className="bg-noor-gold text-noor-darkest px-4 py-2 rounded-full text-sm font-semibold hover:bg-noor-brown hover:text-noor-lightest transition-colors">
+          <button
+            onClick={() => addToCart(product)}
+            className="bg-noor-gold text-noor-darkest px-4 py-2 rounded-full text-sm font-semibold hover:bg-noor-brown hover:text-noor-lightest transition-colors"
+          >
             Add to cart
           </button>
         </div>

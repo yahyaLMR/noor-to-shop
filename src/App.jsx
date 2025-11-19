@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import NewArrivals from './pages/NewArrivals'
 import Collections from './pages/Collections'
 import About from './pages/About'
+import Cart from './pages/Cart'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/new" element={<NewArrivals />} />
           <Route path="/collections" element={<Collections />} />
           <Route path="/about" element={<About />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </main>
       <Footer />

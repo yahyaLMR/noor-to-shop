@@ -16,7 +16,7 @@ function BottomStrip() {
             placeholder="Enter your email"
             className="flex-1 rounded-full bg-noor-darker border border-noor-medium px-4 py-2.5 text-sm text-noor-lightest placeholder:text-noor-light focus:outline-none focus:border-noor-gold"
           />
-          <button className="rounded-full bg-noor-gold text-noor-darkest px-6 py-2.5 text-sm font-semibold hover:bg-noor-brown hover:text-noor-lightest transition-colors">
+          <button className="rounded-full bg-noor-gold text-noor-darkest px-6 py-2.5 text-sm font-semibold hover:bg-noor-brown hover:text-noor-lightest transition-colors cursor-pointer">
             Join newsletter
           </button>
         </form>

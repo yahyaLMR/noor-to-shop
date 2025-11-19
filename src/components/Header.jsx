@@ -1,7 +1,9 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import { useState, useEffect, useRef } from 'react'
+import { useCart } from '../hooks/useCart'
 
 function Header() {
+  const { cartCount } = useCart()
   const baseLink = 'hover:text-noor-gold transition-colors'
   const [open, setOpen] = useState(false)
   const panelRef = useRef(null)
@@ -59,15 +61,14 @@ function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <button className="hidden sm:inline-flex text-sm text-noor-light hover:text-noor-gold transition-colors">
-            Sign in
-          </button>
-          <button className="relative flex items-center gap-2 bg-noor-gold text-noor-darkest px-4 py-2 rounded-full text-sm font-semibold hover:bg-noor-brown hover:text-noor-lightest transition-colors">
+          <Link to="/cart" className="relative flex items-center gap-2 bg-noor-gold text-noor-darkest px-4 py-2 rounded-full text-sm font-semibold hover:bg-noor-brown hover:text-noor-lightest transition-colors">
             <span>Cart</span>
-            <span className="inline-flex items-center justify-center h-5 w-5 rounded-full bg-noor-darkest text-noor-gold text-xs font-bold">
-              0
-            </span>
-          </button>
+            {cartCount > 0 && (
+              <span className="inline-flex items-center justify-center h-5 w-5 rounded-full bg-noor-darkest text-noor-gold text-xs font-bold">
+                {cartCount}
+              </span>
+            )}
+          </Link>
           {/* Mobile hamburger */}
           <button
             ref={toggleRef}
