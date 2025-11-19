@@ -31,7 +31,7 @@ function Cart() {
           <div className="space-y-2 text-noor-light">
             <div className="flex justify-between">
               <span>Subtotal</span>
-              <span>${cartTotal}</span>
+              <span>{cartTotal} DH</span>
             </div>
             <div className="flex justify-between">
               <span>Shipping</span>
@@ -40,7 +40,7 @@ function Cart() {
             <div className="border-t border-noor-medium my-4"></div>
             <div className="flex justify-between text-noor-lightest font-semibold text-lg">
               <span>Total</span>
-              <span>${cartTotal}</span>
+              <span>{cartTotal} DH</span>
             </div>
           </div>
           <button className="w-full mt-6 rounded-full bg-noor-gold text-noor-darkest px-6 py-3 text-sm font-semibold hover:bg-noor-brown hover:text-noor-lightest transition-colors">

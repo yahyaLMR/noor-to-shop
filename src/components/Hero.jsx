@@ -37,7 +37,7 @@ function Hero() {
             <div className="flex gap-8 text-xs md:text-sm text-noor-light">
               <div>
                 <p className="font-semibold text-noor-lightest">Free shipping</p>
-                <p>On orders over $120</p>
+                <p>On orders over 120 DH</p>
               </div>
               <div>
                 <p className="font-semibold text-noor-lightest">Ethically sourced</p>
@@ -66,7 +66,7 @@ function Hero() {
                     A curated bundle of artisan coffee, ceramic mug, and raw honey for calm mornings.
                   </p>
                   <div className="flex items-center justify-between">
-                    <span className="text-noor-gold font-semibold text-lg">$89.00</span>
+                    <span className="text-noor-gold font-semibold text-lg">89.00 DH</span>
                     <button className="text-xs px-3 py-2 rounded-full bg-noor-darkest text-noor-lightest border border-noor-gold/60 hover:bg-noor-gold hover:text-noor-darkest transition-colors">
                       Quick add
                     </button>
@@ -75,12 +75,12 @@ function Hero() {
 
                 <div className="rounded-2xl bg-noor-darkest/60 border border-noor-medium/80 p-3 flex flex-col justify-between">
                   <p className="text-xs text-noor-light mb-2">Handcrafted leather bag</p>
-                  <p className="text-noor-gold font-semibold text-base">$149.99</p>
+                  <p className="text-noor-gold font-semibold text-base">149.99DH</p>
                 </div>
 
                 <div className="rounded-2xl bg-noor-darkest/60 border border-noor-medium/80 p-3 flex flex-col justify-between">
                   <p className="text-xs text-noor-light mb-2">Organic wildflower honey</p>
-                  <p className="text-noor-gold font-semibold text-base">$18.99</p>
+                  <p className="text-noor-gold font-semibold text-base">18.99 DH</p>
                 </div>
               </div>
             </div>

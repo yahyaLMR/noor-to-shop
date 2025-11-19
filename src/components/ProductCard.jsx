@@ -29,7 +29,7 @@ function ProductCard({ product }) {
         </p>
         <div className="mt-auto flex items-center justify-between">
           <div>
-            <p className="text-noor-gold font-semibold text-xl">${product.price}</p>
+            <p className="text-noor-gold font-semibold text-xl">{product.price} DH</p>
             {product.note && (
               <p className="text-[0.7rem] text-noor-light mt-1">{product.note}</p>
             )}

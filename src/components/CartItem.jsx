@@ -17,7 +17,7 @@ function CartItem({ item }) {
       <img src={item.imageUrl} alt={item.name} className="w-24 h-24 object-cover rounded-md" />
       <div className="flex-1">
         <h4 className="text-noor-lightest font-semibold">{item.name}</h4>
-        <p className="text-sm text-noor-light">${item.price}</p>
+        <p className="text-sm text-noor-light">{item.price} DH</p>
         <button onClick={() => removeFromCart(item.id)} className="text-xs text-red-400 hover:text-red-300 transition-colors mt-1 cursor-pointer">
           Remove
         </button>
