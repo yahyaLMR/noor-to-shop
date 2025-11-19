@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { products as sourceProducts } from '../data/products';
 
 function Hero() {
@@ -16,6 +16,13 @@ function Hero() {
     description: p.description,
     image: p.imageUrl
   }));
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % products.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, [products.length]);
 
   const nextSlide = (e) => {
     e?.stopPropagation();

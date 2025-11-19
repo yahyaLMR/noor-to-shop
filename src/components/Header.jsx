@@ -41,8 +41,8 @@ function Header() {
     <header className="bg-noor-darkest/95 backdrop-blur sticky top-0 z-30 border-b border-noor-medium">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between gap-6">
         <div className="flex items-center gap-2">
-          <div className="h-9 w-9 rounded-full bg-noor-gold flex items-center justify-center text-noor-darkest font-bold text-xl">
-            N
+          <div className="h-9 w-9 rounded-full bg-noor-gold flex items-center justify-center ">
+            <img className='rounded-md' src="https://noortolearn.com/assets/logo-BRdXjARY.jpeg" alt="" />
           </div>
           <div>
             <h1 className="text-xl md:text-2xl font-semibold text-noor-lightest tracking-wide">
