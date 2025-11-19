@@ -1,8 +1,18 @@
 {
-  "name": "noor-shop",
+  "name": "noor-to-shop",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
+  "description": "noor to shop – curated warm, minimal essentials for intentional living.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yahyaLMR/noor-to-shop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yahyaLMR/noor-to-shop/issues"
+  },
+  "homepage": "https://github.com/yahyaLMR/noor-to-shop#readme",
+  "keywords": ["ecommerce", "react", "vite", "tailwind", "store", "noor to shop"],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
