@@ -1,9 +1,13 @@
 function Hero() {
   return (
     <section className="relative overflow-hidden bg-noor-darker">
-      <div className="absolute inset-0 pointer-events-none opacity-40">
-        <div className="absolute -top-32 -right-24 h-80 w-80 rounded-full bg-noor-brown blur-3xl" />
-        <div className="absolute -bottom-40 -left-10 h-96 w-96 rounded-full bg-noor-gold/20 blur-3xl" />
+      <div className="absolute inset-0">
+        <img
+          src="https://picsum.photos/id/12/1200/800"
+          alt="Warm, ambient lifestyle setting"
+          className="w-full h-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-noor-darker via-noor-darker/70 to-transparent" />
       </div>
 
       <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">

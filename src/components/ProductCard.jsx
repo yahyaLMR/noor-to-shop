@@ -1,8 +1,12 @@
 function ProductCard({ product }) {
   return (
     <article className="group bg-noor-darkest/70 border border-noor-medium/70 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:border-noor-gold/70 transition-all duration-200 flex flex-col">
-      <div className="relative h-52 bg-noor-medium/40 flex items-center justify-center">
-        <span className="text-6xl drop-shadow-sm">{product.icon}</span>
+      <div className="relative h-72 bg-noor-medium/40">
+        <img
+          src={product.imageUrl}
+          alt={product.name}
+          className="w-full h-full object-cover"
+        />
         {product.badge && (
           <span className="absolute left-4 top-4 text-xs uppercase tracking-wide px-2.5 py-1 rounded-full bg-noor-gold text-noor-darkest font-semibold">
             {product.badge}
