@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-noor-darkest: #11110e;
+  --color-noor-darker: #342d24;
+  --color-noor-medium: #7c6c5b;
+  --color-noor-brown: #7d5a34;
+  --color-noor-gold: #bd915a;
+  --color-noor-light: #a8947d;
+  --color-noor-lightest: #f3e5d7;
+}
